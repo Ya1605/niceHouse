@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="niceHouse.css">
+  <title>niceHouse</title>
+</head>
+<body>
+<div class="container">
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <div class="logo-icon">UN</div>
+      <span>Urban Nest</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Planning and pricing</a></li>
+        <li><a href="#">Virtual tour</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your New Home<br>In The Heart Of Modernity</h1>
+    </div>
+    <div class="hero-description">
+      "Urban Nest" - comfort, calm and sweetness for your homeland:<br>
+      manual planning, location and daily infrastructure
+    </div>
+    <a href="#" class="btn">
+      See Detail
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </section>
+
+  <!-- Main Image -->
+  <div class="main-image-container">
+    <img src="house-1477041_640.jpg" alt="Modern architectural building with curved balconies" class="main-image">
+
+
+    <div class="carousel">
+      <!--button left-->
+       <div class="carousel-nav left" id="carouselNavLeft">
+         <i class="fas fa-chevron-left"></i>
+       </div>
+      <!-- Carousel -->
+       <div class="carousel-track" id="carouselTrack">
+         <div class="carousel-item">
+           <img src="house-1836070_640.jpg" alt="Building thumbnail 1" />
+         </div>
+         <div class="carousel-item">
+           <img src="istockphoto-130408311-1024x1024.jpg" alt="Building thumbnail 2" />
+         </div>
+         <div class="carousel-item">
+           <img src="large-home-389271_640.jpg" alt="Building thumbnail 3" />
+         </div>
+         <div class="carousel-item">
+           <img src="house-1477041_640.jpg" alt="Building thumbnail 4" />
+         </div>
+       </div>
+      <!--button right-->
+       <div class="carousel-nav" id="carouselNavRight">
+         <i class="fas fa-chevron-right"></i>
+       </div>
+     </div>
+
+   </div>
+ </div>
+
+
+
+
+     <script>
+
+       const navLink = document.querySelectorAll('nav a');
+       navLink.forEach(link => {
+         link.addEventListener('click', function (){
+           navLink.forEach(i => i.classList.remove('active'));
+           this.classList.add('active');
+         });
+       });
+       document.addEventListener("DOMContentLoaded", function () {
+       const navRight = document.getElementById("carouselNavRight");
+       const navLeft = document.getElementById("carouselNavLeft");
+       const track = document.getElementById("carouselTrack");
+       const mainImage = document.querySelector(".main-image");
+
+       navRight.addEventListener("click", () => {
+       track.scrollBy({ left: 100, behavior: "smooth" });
+     });
+
+       navLeft.addEventListener("click", () => {
+       track.scrollBy({ left: -100, behavior: "smooth" });
+     });
+
+       // Додаємо події кліку для всіх мініатюр
+       const thumbnails = track.querySelectorAll("img");
+       thumbnails.forEach(img => {
+       img.addEventListener("click", () => {
+         mainImage.classList.add("fade");
+         setTimeout(()=>{
+           mainImage.src = img.src;
+           mainImage.alt = img.alt;
+           mainImage.classList.remove("fade");
+         },300);
+
+     });
+     });
+     });
+
+
+</script>
+
+ </body>
+ </html>
