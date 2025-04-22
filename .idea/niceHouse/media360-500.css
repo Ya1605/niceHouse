@@ -1,0 +1,89 @@
+@media screen and (max-width: 500px) {
+
+  /* Сховати бургер на великих екранах */
+  .burger {
+    display: none;
+  }
+
+  /* Адаптація: показати бургер і сховати меню */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: -60px;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 100;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    margin-right: -60px;
+  }
+
+  header {
+    position: relative;
+  }
+
+   .main-image-container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     height: 40vh;
+
+   }
+  .main-image {
+    height: 40vh;
+    width: 80vw;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .hero-content {
+    width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 25px;
+  }
+
+
+    .carousel-track {
+      display: none;
+
+  }
+
+.carousel-nav.right{
+  right: -5px;
+}
+
+  .carousel-nav left{
+    left: 10px;
+  }
+.carousel{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: inherit;
+  width: 30vw;
+}
+
+
+
+}

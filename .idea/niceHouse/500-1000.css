@@ -1,0 +1,9 @@
+@media screen and (max-width: 1000px){
+
+  .nav{
+    font-size: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+}
