@@ -215,6 +215,3 @@ nav a.active::after {
   opacity: 0;
 }
 
-.burger{
-  display:none;
-}

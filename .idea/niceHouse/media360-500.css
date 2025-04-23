@@ -38,12 +38,15 @@
      display: flex;
      align-items: center;
      justify-content: center;
+     position: relative;
      height: 40vh;
+     width: 80vw;
 
    }
   .main-image {
-    height: 40vh;
-    width: 80vw;
+    width: 115vw;
+    max-height: 40vh;
+    display: block;
   }
 
   .hero {
@@ -80,7 +83,8 @@
   justify-content: space-between;
   align-items: flex-end;
   flex-direction: inherit;
-  width: 30vw;
+  width: 40vw;
+  height: 30px;
 }
 
 

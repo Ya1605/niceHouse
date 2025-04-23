@@ -7,8 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="niceHouse.css">
-  <link rel="stylesheet" href="media360-500.css" media="(max-width: 500px)">
-  <link rel="stylesheet" href="500-1000.css" media="max-width:1000px">
   <title>niceHouse</title>
 </head>
 <body>
@@ -19,11 +17,6 @@
       <div class="logo-icon">UN</div>
       <span>Urban Nest</span>
     </div>
-    <div class="burger" id="burgerMenu">
-      <i class="fas fa-bars"></i>
-    </div>
-
-    <nav class="nav">
       <ul>
         <li><a href="#" class="active">About</a></li>
         <li><a href="#">Gallery</a></li>
@@ -75,7 +68,6 @@
          </div>
        </div>
       <!--button right-->
-       <div class="carousel-nav right" id="carouselNavRight">
          <i class="fas fa-chevron-right"></i>
        </div>
      </div>
@@ -124,50 +116,6 @@
      });
      });
 
-       document.addEventListener("DOMContentLoaded", function () {
-         const burger = document.getElementById("burgerMenu");
-         const nav = document.querySelector("nav ul");
-
-         burger.addEventListener("click", () => {
-           nav.classList.toggle("active");
-         });
-       });
-
-       document.addEventListener("DOMContentLoaded", function () {
-         const navRight = document.getElementById("carouselNavRight");
-         const navLeft = document.getElementById("carouselNavLeft");
-         const mainImage = document.querySelector(".main-image");
-
-         // Масив зображень
-         const images = [
-           "house-1836070_640.jpg",
-           "istockphoto-130408311-1024x1024.jpg",
-           "large-home-389271_640.jpg",
-           "house-1477041_640.jpg"
-         ];
-         let currentIndex = 0;
-
-         // Функція оновлення головної картинки
-         function updateMainImage() {
-           mainImage.classList.add("fade");
-           setTimeout(() => {
-             mainImage.src = images[currentIndex];
-             mainImage.classList.remove("fade");
-           }, 300);
-         }
-
-         // Перехід вліво
-         navLeft.addEventListener("click", () => {
-           currentIndex = (currentIndex - 1 + images.length) % images.length;
-           updateMainImage();
-         });
-
-         // Перехід вправо
-         navRight.addEventListener("click", () => {
-           currentIndex = (currentIndex + 1) % images.length;
-           updateMainImage();
-         });
-       });
 
      </script>
 
