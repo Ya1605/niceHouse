@@ -1,0 +1,67 @@
+@media screen and (min-width:1000px)and (max-width: 1500px){
+
+
+  .burger{
+    display: none;
+  }
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+  }
+
+  .hero-content h1 {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+  }
+
+  .hero-content {
+    width: 100%;
+
+  }
+
+  .main-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50vh;
+    width: 80vw;
+
+  }
+  .main-image {
+    width: 115vw;
+    display: block;
+  }
+.hero-description{
+  width: 80%;
+  margin: 20px;
+}
+
+.btn{
+  margin: 30px;
+}
+.carousel-track{
+  height: 6vh;
+  max-width: 80vw;
+}
+.carousel-item{
+  width: 100px;
+  height: 90px;
+}
+  .carousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: inherit;
+    width: 400px;
+    height: 100px;
+  }
+
+
+}

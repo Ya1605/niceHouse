@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) {
+@media screen and (min-width:360px)and (max-width: 500px) {
 
   /* Сховати бургер на великих екранах */
   .burger {
@@ -27,7 +27,7 @@
     cursor: pointer;
     font-size: 24px;
     color: #333;
-    margin-right: -60px;
+    margin-right: -180px;
   }
 
   header {
@@ -58,11 +58,19 @@
   }
 
   .hero-content {
-    width: 90%;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
   }
 
   .hero-content h1 {
     font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
   }
 
 
@@ -72,11 +80,11 @@
   }
 
 .carousel-nav.right{
-  right: -5px;
+  right: 1px;
 }
 
   .carousel-nav.left{
-    left: -5px;
+    left: 1px;
   }
 .carousel{
   display: flex;
@@ -87,6 +95,13 @@
   height: 30px;
 }
 
+.hero-description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222222;
+  width: 70vw;
 
+}
 
 }

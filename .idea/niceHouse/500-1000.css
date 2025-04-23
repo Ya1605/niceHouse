@@ -1,9 +1,63 @@
-@media screen and (max-width: 1000px){
+@media screen and (min-width:500px) and (max-width: 1000px){
 
-  .nav{
-    font-size: 7px;
+  .burger{
+    display: none;
+  }
+
+  .nav a{
+    font-size: 12px;
+  }
+   .nav{
+     display:flex;
+     justify-content: space-between;
+   }
+  header {
+    position: relative;
+    width: 80vw;
+  }
+
+  .hero {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
-    justify-content: right;
+    padding: 40px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+  }
+
+  .hero-content {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+  }
+ .hero-description{
+   font-size: 12px;
+   width: 50vw;
+ }
+  .main-image-container{
+    width: 100%;
+  }
+  .main-image {
+    width: 100vw;
+    max-height: 50vh;
+    display: block;
+  }
+
+  .carousel{
+    width: 40vw;
+  }
+  .carousel-nav right{
+    height: 30px;
+    width: 30px;
+    right: -15px;
   }
 }
