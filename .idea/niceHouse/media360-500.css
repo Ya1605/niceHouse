@@ -2,7 +2,7 @@
 
   /* Сховати бургер на великих екранах */
   .burger {
-    display: none;
+    display: block;
   }
 
   /* Адаптація: показати бургер і сховати меню */
@@ -38,7 +38,6 @@
      display: flex;
      align-items: center;
      justify-content: center;
-
      height: 40vh;
 
    }
@@ -73,8 +72,8 @@
   right: -5px;
 }
 
-  .carousel-nav left{
-    left: 10px;
+  .carousel-nav.left{
+    left: -5px;
   }
 .carousel{
   display: flex;
