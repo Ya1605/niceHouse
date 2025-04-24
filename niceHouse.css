@@ -102,22 +102,15 @@ nav a.active::after {
 .hero-description {
   font-size: 16px;
   color: #666;
-  margin-bottom: 30px;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25vw;
+  margin: 10px;
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background-color: #1a7d65;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
+
 
 .btn:hover {
   background-color: #156253;
