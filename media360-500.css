@@ -79,13 +79,7 @@
 
   }
 
-.carousel-nav.right{
-  right: 1px;
-}
 
-  .carousel-nav.left{
-    left: 1px;
-  }
 .carousel{
   display: flex;
   justify-content: space-between;
